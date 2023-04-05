@@ -16,7 +16,7 @@ Parameters App
 -method
 
 
-@ingridients
+@ingredients
 {   or just strings 
 -alcohol 
 -citrus
@@ -25,18 +25,18 @@ Parameters App
 } 
 
 Batch{ 
-ingridients i++{
-for each (ingridientOb){
+ingredients i++{
+for each (ingredientOb){
 user input how many you want to batch
 
-ingridient * user input
+ingredient * user input
 
 Abatch[];
 
 
 Abatch [ing*user+ ing*user]
-ingridientsOb sumatory is total how many ml per single when batch
-abatch ( each ingridient show how much you need to use to create the batch)
+ingredientsOb sumatory is total how many ml per single when batch
+abatch ( each ingredient show how much you need to use to create the batch)
 
 {
 
