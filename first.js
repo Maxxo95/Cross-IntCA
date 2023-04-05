@@ -154,15 +154,16 @@ let cocktailsMenu = [
   }
   
 ];
-
+/*STARTS DOM in recepie container we will introduce the content of our cocktails array*/
 let recipeContainer = document.getElementById('content');
+/*with this for loop we will create containers for each coktail in the array wit the following constroction withn the 'contet; class secction in the html'*/
 for (let i=0 ; i < cocktailsMenu.length ;  i++){
 
-let cocktail = cocktailsMenu[i];
+let cocktail = cocktailsMenu[i]; /*assigning each cocktail with i index */
 
 let recipeContainer = document.getElementById('content');
-
-let html = `
+/*HERE THE WAY THE INFO OF THE ARRAY WILL BE PRINTED IN THE HTML CREATING DIVISION TO THEN CCS AND STYLE THE OUTPUT*/
+let html = `  
 <div class="cocktails" id='drink-${i}'>
   <div class='drinkConta'>
     <h2>${cocktailsMenu[i].name}</h2>
@@ -176,25 +177,28 @@ recipeContainer.innerHTML += html;
 
 
 }
-
+/*DROP DOWN FUNCTION SECTION DROPDOWN, scan it all and put it in variables + option as a guide or switch to en or disable the dropdown function */
 const dropdowns = document.querySelectorAll('.dropdown');
+/*ARROW FUNCTION IN CASE OF MORE DROPDOWN MENUS*/
 dropdowns.forEach((dropdown) => {
   const cover = dropdown.querySelector('.cover');
   const caret = dropdown.querySelector('.caret');
   const menu = dropdown.querySelector('.menu');
   const options = menu.querySelectorAll('.option');
-
+/*withn this function another function to evenlisent click in the cover section*/
   cover.addEventListener('click', () => {
-    caret.classList.toggle('caret-rotate');
-    menu.classList.toggle('menu-open');
+    caret.classList.toggle('caret-rotate');  /*IF CLICK IT WILL TOGGLE WITH THE PREVIOUS CSS CREATED TWO OPTION OPEN OR CLOSE HIDDE/ ENN*/
+    menu.classList.toggle('menu-open');   /*same diferent version of menu open and close*/
   });
-
-  options.forEach((option) => {
+/*HERE THE VARIABLES CARE & MENU HAVE TWO STATES ON & OFF WE COULD SAY BUT WE NEED TO MANAGE THEM*/ 
+  /*function basing on menu full content versions, */
+  /*for each option function, */
+  options.forEach((option) => { 
     option.addEventListener('click', () => {
-      cover.innerText = option.innerText;
-      caret.classList.remove('caret-rotate');
-      menu.classList.remove('menu-open');
-      options.forEach((option) => {
+      caret.classList.remove('caret-rotate'); /*if click removes this option from the html caret variable and lets caret */
+      menu.classList.remove('menu-open'); /*removes menu with click */
+      
+      options.forEach((option) => { /*finally will loop on the clicks removing and adding */
         option.classList.remove('active');
       });
       option.classList.add('active');
@@ -203,5 +207,30 @@ dropdowns.forEach((dropdown) => {
 });
 
 
+/*pop up function of support button*/
+function togglePopup() {
+  var popup = document.getElementById("popup");
+  if (popup.style.display === "none") {
+    popup.style.display = "block";
+  } else {
+    popup.style.display = "none";
+  }
+}
 
+function togglePopup() {
+  var popup = document.getElementById("popup");
+  if (popup.style.display === "none") {
+    popup.style.display = "block";
+  } else {
+    popup.style.display = "none";
+  }
+}
 
+function togglePopup1() {
+  var popup = document.getElementById("loginpop");
+  if (popup.style.display === "none") {
+    popup.style.display = "block";
+  } else {
+    popup.style.display = "none";
+  }
+}
