@@ -6,6 +6,9 @@ margin: 0px;
 
 }
 #topStable{
+position: sticky;
+top: 0px;
+z-index: 1;
 display: flex;
 justify-content:  space-between;
 margin: 0px;
@@ -14,27 +17,73 @@ margin: 0px;
 height: 100px;
 background-color: rgb(3, 8, 16, .9);
   color: rgb(231, 247, 253, .8);
+
 }
 
-#sideMenu{
-align-self: center;
-margin-bottom: 10px;
-box-shadow: 2px 5px 7px 0px rgba(0,0,0,0.35);
-width: 70px;
-height 10px;
-background-color: rgb(206, 133, 50, .7);
+.dropdown{
+margin-top: 30px;
+width: 220px;
+height: 130px;
+background-color: rgb(206, 133, 50, .0);
  border: none;
+}
+.cover {
+background-color: rgb(206, 133, 50, .9);
+display:flex;
+justify-content: center;
+align-items: center;
+ border-radius: 5px;
+height: 40px;
+cursor: pointer;
+}
+.cover-clicked {
+border: 2px;
+}
+.menu {
+height: 90px;
+flex-flow: column wrap; 
+width:240px;
+margin: px;
+opacity: 0;
+display: none;
+transition: 0.2s;
+z-index:1;
+}
+.menu-open {
+display: block;
+opacity: 1;
+}
+.cover:hover{
+background-color: rgb(206, 133, 50, .3);
+}
+.button:hover{
+background-color: rgb(206, 133, 50, .8); 
+}
+.button {
+  background-color: rgb(128,42,0);
+
+ 
 border-radius: 5px;
+
+width:220px;
+height: 30px;
+margin: 0px; 
+}
+.caret{
+width:0;
+height:0;
+border-left:5px solid transparent;
+border-right:5px solid transparent;
+border-top: 6px solid black;
+transition: 0.3s;
+}
+.caret-rotate{
+transform: rotate(180deg);
 }
 
-#sideMenu:hover {
-cursor: pointer;
-background-color: rgb(233, 191, 106);
-transform: scale(1.02);
-}
 
 #introd{
-   margin-left:  ;
+   margin-left: 0px ;
 width: 100%;
 height: 150px;
 background-color: rgb(206, 133, 50, .8);
@@ -62,6 +111,7 @@ padding-top: 0%;
 padding-left: 1%; 
  overflow: auto; 
  justify-content:  space-between; 
+border-radius: 5px;
 }
 
 .drinkImg {  
@@ -77,4 +127,5 @@ border-radius: 5px;
 flex-flow: column wrap;
 justify-content: end; 
 }
+
 
