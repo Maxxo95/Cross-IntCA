@@ -1,3 +1,4 @@
+
 let cocktailsMenu = [
   {
     name: 'Pornstar Martini', 
@@ -31,7 +32,7 @@ let cocktailsMenu = [
     method: ['shake', 'strain'] ,  
     garnish: ['rasp', 'mintSprig', 'crushed ice on top'] ,
     ice: 'cubed'  ,
-    image: "https://th.bing.com/th/id/OIP.R2f1ekQ-sidTajtPINvAUQHaD4?pid=ImgDet&rs=1g"
+    image: "collins.jpg"
   },
      {
     name: 'Passion Punch', 
@@ -50,7 +51,7 @@ let cocktailsMenu = [
     method: ['shake', 'strain'] ,  
     garnish: ['grapeFruit', 'mintSprig', 'crushed ice on top'] ,
     ice: 'cubed'  ,
-    image: "https://th.bing.com/th/id/OIP.R2f1ekQ-sidTajtPINvAUQHaD4?pid=ImgDet&rs=1g"
+         image: "passion.jpg"
   },
   {
     name: 'Oasis Delight', 
@@ -69,7 +70,7 @@ let cocktailsMenu = [
     method: ['shake', 'strain'] ,  
     garnish: ['lime', 'mintSprig', 'crush ice on top'] ,
     ice: 'cubed'  ,
-    image: "https://th.bing.com/th/id/OIP.R2f1ekQ-sidTajtPINvAUQHaD4?pid=ImgDet&rs=1g"
+    image: "oasis.jpg"
   },
     {
     name: 'Magic Rose', 
@@ -87,7 +88,7 @@ let cocktailsMenu = [
     method: ['shake', 'strain'] ,  
     garnish: ['strawBerry', 'mintSprig', 'crush ice on top'] ,
     ice: 'cubed'  ,
-    image: "https://th.bing.com/th/id/OIP.R2f1ekQ-sidTajtPINvAUQHaD4?pid=ImgDet&rs=1g"
+    image: "rose.jpg"
   },
       {
     name: 'Espresso Martini', 
@@ -104,7 +105,7 @@ let cocktailsMenu = [
     method: ['shake', 'doubleStrain'] ,  
     garnish: ['3 coffe beans'] ,
     ice: 'chill'  ,
-    image: "https://th.bing.com/th/id/OIP.R2f1ekQ-sidTajtPINvAUQHaD4?pid=ImgDet&rs=1g"
+    image: ""
   },
      {
     name: 'Cosmopolitan', 
@@ -122,7 +123,7 @@ let cocktailsMenu = [
     method: ['shake', 'doubleStrain'] ,  
     garnish: ['3 coffe beans'] ,
     ice: 'chill'  ,
-    image: "https://th.bing.com/th/id/OIP.R2f1ekQ-sidTajtPINvAUQHaD4?pid=ImgDet&rs=1g"
+    image: "cosmo.jpg"
   },
    {
     name: 'Cappuccino', 

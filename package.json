@@ -1,0 +1,13 @@
+{
+  "name": "my-web-app",
+  "version": "1.0.0",
+  "description": "My awesome web app",
+  "scripts": {
+    "start": "nodemon first.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
+
+
